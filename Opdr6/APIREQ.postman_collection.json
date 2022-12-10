@@ -1,0 +1,381 @@
+{
+	"info": {
+		"_postman_id": "3600b1a4-09e0-4bd4-88e9-b8048ac9b80e",
+		"name": "APIREQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20433150"
+	},
+	"item": [
+		{
+			"name": "https://localhost:8124/api/auth/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"User1235\",\r\n  \"email\": \"user@live.nl\",\r\n  \"password\": \"User123@\",\r\n  \"gender\": \"anders\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8124/api/auth/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:8124/api/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"User1\",\r\n  \"password\": \"User123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8124/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:8124/api/Attractie/GetAllEager",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVXNlcjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJFbXBsb3llZSIsImV4cCI6MTY2NTU3NTY1OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6ODEyNCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjgxMjQifQ.edjsRAFJYKDABIXCXI1mDa9oYtszcYHmvCIWCk2MqIc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8124/api/Attractie/GetAllEager",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"Attractie",
+						"GetAllEager"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:8124/api/Attractie/GetById/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVXNlcjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJFbXBsb3llZSIsImV4cCI6MTY2NTI1NzE2NSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6ODEyNCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjgxMjQifQ.yu3qIUkRV9qu_DWmUM16xrygcvnLTp5C94VC8uc9MD4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8124/api/Attractie/GetById/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"Attractie",
+						"GetById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:8124/api/Attractie/FindByName?name=Attractie1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVXNlcjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJFbXBsb3llZSIsImV4cCI6MTY2NTU3NTY1OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6ODEyNCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjgxMjQifQ.edjsRAFJYKDABIXCXI1mDa9oYtszcYHmvCIWCk2MqIc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8124/api/Attractie/FindByName?name=Attractie1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"Attractie",
+						"FindByName"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Attractie1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:8124/api/Attractie/Add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVXNlcjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJFbXBsb3llZSIsImV4cCI6MTY2NTU3NTY1OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6ODEyNCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjgxMjQifQ.edjsRAFJYKDABIXCXI1mDa9oYtszcYHmvCIWCk2MqIc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"string\",\r\n  \"engheid\": 0,\r\n  \"bouwjaar\": \"2022-10-11T19:25:45.884Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8124/api/Attractie/Add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"Attractie",
+						"Add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:8124/api/Attractie/Delete/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVXNlcjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJFbXBsb3llZSIsImV4cCI6MTY2NTU3NTY1OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6ODEyNCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjgxMjQifQ.edjsRAFJYKDABIXCXI1mDa9oYtszcYHmvCIWCk2MqIc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8124/api/Attractie/Delete/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"Attractie",
+						"Delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:8124/api/Attractie/Update/3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVXNlcjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJFbXBsb3llZSIsImV4cCI6MTY2NTU3NTY1OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6ODEyNCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjgxMjQifQ.edjsRAFJYKDABIXCXI1mDa9oYtszcYHmvCIWCk2MqIc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 3,\r\n  \"name\": \"fdhg\",\r\n  \"engheid\": 2,\r\n  \"bouwjaar\": \"2022-10-11T19:52:42.489Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8124/api/Attractie/Update/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"Attractie",
+						"Update",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:8124/api/Attractie/LikeById/Att/3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVXNlcjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJFbXBsb3llZSIsImV4cCI6MTY2NTU3NTY1OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6ODEyNCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjgxMjQifQ.edjsRAFJYKDABIXCXI1mDa9oYtszcYHmvCIWCk2MqIc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8124/api/Attractie/LikeById/Att/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"Attractie",
+						"LikeById",
+						"Att",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:8124/api/Attractie/GetLikes/3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVXNlcjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJFbXBsb3llZSIsImV4cCI6MTY2NTU3NTY1OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6ODEyNCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjgxMjQifQ.edjsRAFJYKDABIXCXI1mDa9oYtszcYHmvCIWCk2MqIc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8124/api/Attractie/GetLikes/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"Attractie",
+						"GetLikes",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:8124/api/Attractie/LikeById/Att/3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVXNlcjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJFbXBsb3llZSIsImV4cCI6MTY2NTU3NTY1OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6ODEyNCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjgxMjQifQ.edjsRAFJYKDABIXCXI1mDa9oYtszcYHmvCIWCk2MqIc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8124/api/Attractie/LikeById/Att/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8124",
+					"path": [
+						"api",
+						"Attractie",
+						"LikeById",
+						"Att",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
